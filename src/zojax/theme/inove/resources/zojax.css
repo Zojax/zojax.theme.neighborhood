@@ -1,0 +1,245 @@
+/* zrt-cssregistry: */
+
+@media all {
+
+  ul {
+    padding: 0;
+    margin: 0.5em 0 0 1.5em;
+    line-height: 1.5em;
+  }
+  
+  ol {
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0.5em 0 0 1.8em;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    margin-bottom: 1em;
+  }
+  
+  img {
+    border: none;
+    vertical-align: middle;
+  }
+
+  p img {
+    border: none;
+    margin: 0;
+  }
+
+  hr {
+    border: 0;
+    height: borderWidth;
+    color: globalBorderColor;
+    background-color: globalBorderColor;
+    margin: 0.5em 0 1em 0;
+  }
+  
+  fieldset {
+    border: borderWidth borderStyle globalBorderColor;
+    margin: 1em 0 1em 0;
+    padding: 0 1em 0 1em;
+    font-size: 110%;
+  }
+  
+  legend {
+    background: globalBackgroundColor;
+    padding: 0.3em;
+    font-size: 90%;
+  }
+
+  textarea {
+    font-size: 99%;
+    font-family: monospaceFontFamily;
+    border: borderWidth solid globalBorderColor;
+    color: inputFontColor;
+    background: White url(zojax/images/input_background.gif) repeat-x;
+    width: 80%;
+  }
+
+  input {
+    font-size: 99%;
+    font-family: fontFamily;
+    visibility: visible;
+    border: borderWidth solid globalBorderColor;
+    color: inputFontColor;
+    vertical-align: middle;
+    background: white url(zojax/images/input_background.gif) repeat-x;
+  }
+  
+  select {
+    font-size: 99%;
+    border: borderWidth solid globalBorderColor;
+    color: inputFontColor;
+    background-color: white;
+    vertical-align: top;
+  }
+
+  .z-form-field label { 
+    font-weight: bold;
+  }
+
+  .z-personalbar {
+    border-bottom: 0;
+    background-color: transparent;
+    color: #FFF;
+    padding: 0;
+    margin: 0 auto;
+    width: 936px;
+  }
+
+  .z-personalbar-menu a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .z-personalbar-menu li a:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }    
+
+  li.z-personalbar-principal {
+    color: #FFF;
+  }
+
+  #caption h1 {
+    border: none;
+  }
+
+  ul#menus {
+    line-height:1.5em;
+    margin:0;
+    padding:0;
+  }
+
+  #space-column-content {
+    vertical-align: top;
+  }
+
+  #z-portal { 
+  }
+
+  #z-space { 
+    margin: 0;
+  }
+
+  #z-portal-workspace { 
+    padding: 1.5em;
+  }
+
+  #z-content { 
+    font-size: 105%;
+  }
+
+  .z-space-header { 
+    padding-top: 1em;
+    padding-left: 2em;
+  }
+
+  .z-space-views-wrapper { 
+    margin-bottom: 0em;
+  }
+
+  .space-column {
+    background: #F7F7F7;
+    width: 300px;
+    font-size: 110%;
+    line-height: 145%;
+    overflow: hidden;
+    border-left: borderWidth solid globalBorderColor;
+    padding-bottom: 2em;
+  }
+
+  .space-column-wrapper { 
+    padding: 1em;
+  }
+
+  #space-column-content {
+    padding-bottom: 4em;
+  }
+
+  .space-column {
+    padding-bottom: 4em;
+  }
+
+  .z-portlet {
+    padding-top: 0.5em;
+    background: transparent url(inove/img/widgetsep.png) no-repeat scroll center bottom;
+  }
+
+  .z-portlet-body { 
+    border: 0;
+    padding-left: 0.7em;
+    padding-right: 1.5em;
+  }
+
+  .z-portlet-item { 
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .z-portlet-header {
+    border: 0;
+    padding: 0 0 0 0.5em;
+    font-size: 130%;
+    font-weight: bold;
+    text-transform: none;
+    background-color: transparent;
+  }
+
+  .z-portlet-footer { 
+    border: 0;
+  }
+
+  .z-portlet .z-listing li {
+    padding-left: 22px;
+    background: url(inove/img/icons.gif) 0 -317px no-repeat;
+  }
+
+  .z-portlet ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+
+  .z-portlet li {
+    padding-left: 22px;
+    list-style: none;
+    background: url(inove/img/icons.gif) 0 -317px no-repeat;
+  }
+
+  .portlet-actions .z-listing li {
+    padding-left: 0;
+    background: transparent;
+  }
+
+  .personal-content-portlets { 
+    width: auto;
+    padding-left: 1em;
+  }
+
+  .z-space-views-wrapper {
+    border: 0;
+    padding-bottom: 1em;
+    background: url(inove/img/header_footer.jpg) 0 -103px no-repeat;
+  }
+
+  .z-space-views { 
+    border: 0;
+  }
+
+  .z-space-views ul li { 
+    border-bottom: 0;
+  }
+
+}

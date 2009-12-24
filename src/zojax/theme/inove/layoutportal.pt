@@ -1,0 +1,13 @@
+<tal:block tal:content="structure pageelement:portal.personalbar" />
+
+<div id="container">
+  <div id="z-portal">
+    <tal:block define="context nocall:maincontext" content="structure pageelement:portal.header" />
+
+    <tal:block content="structure view/render"></tal:block>
+  </div>
+
+  <tal:block content="structure pageelement:portal.footer" />
+</div>
+
+<tal:block tal:content="structure pageelement:portal.ui.googleanalytics" />

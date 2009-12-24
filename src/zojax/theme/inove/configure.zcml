@@ -1,0 +1,124 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="zojax.theme.inove">
+
+  <interface
+     name="zojax.theme.inove"
+     interface=".interfaces.INoveSkin"
+     type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+
+  <zojax:skin
+     title="iNove theme"
+     name="zojax.theme.inove"
+     layer=".interfaces.INoveSkin"
+     description="iNove theme for zojax." />
+
+  <!-- page layout -->
+  <zojax:layout
+     name="page"
+     title="Page"
+     uid="inove.page"
+     for="zope.app.component.interfaces.ISite"
+     description="Page layout. It contains html headers, html body, etc."
+     template="layoutpage.pt"
+     layer=".interfaces.ILayer"
+     class=".layoutpage.LayoutPage" />
+
+  <!-- portal layout -->
+  <zojax:layout
+     name="portal"
+     title="Portal"
+     layout="page"
+     uid="inove.portal"
+     for="zope.app.component.interfaces.ISite"
+     description="Portal layout for 'inove' theme"
+     template="layoutportal.pt"
+     layer=".interfaces.ILayer" />
+
+  <!-- viewspace layout -->
+  <zojax:layout
+     name="viewspace"
+     title="Viewspace"
+     layout="workspace"
+     uid="inove.viewspace"
+     description="Viewpsace layout."
+     for="zope.app.component.interfaces.ISite"
+     template="layoutviewspace.pt" 
+     layer=".interfaces.ILayer" />
+
+  <!-- space layout -->
+  <zojax:layout
+     name="space"
+     layout="portal"
+     template="spacelayout.pt"
+     for="zojax.content.space.interfaces.IContentSpace"
+     class="zojax.content.space.browser.layout.SpaceLayout" 
+     layer=".interfaces.ILayer" />
+
+  <zojax:layout
+     name="workspace"
+     layout="space"
+     template="spacelayoutworkspace.pt"
+     for="zojax.content.space.interfaces.IContentSpace"
+     class="zojax.content.space.browser.layout.WorkspaceLayout"
+     layer=".interfaces.ILayer" />
+
+  <!-- html header elements -->
+  <zojax:pageelement
+     name="page.headers"
+     template="pageheaders.pt"
+     class=".pageheaders.PageHeaders"
+     provides=".interfaces.IPageHeaders"
+     layer=".interfaces.ILayer" />
+
+  <!-- portal elements -->
+  <zojax:pageelement
+     name="portal.header"
+     template="portalheader.pt"
+     class=".portalheader.PortalHeader"
+     layer=".interfaces.ILayer" />
+
+  <zojax:pageelement
+     name="portal.footer"
+     template="portalfooter.pt"
+     class=".portalfooter.PortalFooter"
+     layer=".interfaces.ILayer" />
+
+  <!-- resources -->
+  <zojax:resourcedirectory
+     name="inove"
+     directory="resources"
+     mapping=".css:zrt"
+     layer=".interfaces.ILayer" />
+
+  <zojax:resourcepackage
+     type="stylesheet"
+     name="inove.css"
+     title="inove theme (Stylesheets)"
+     cache="dynamic"
+     library="inove"
+     order="10"
+     require="zojax"
+     layer=".interfaces.ILayer">
+
+    <resource path="inove/style.css" />
+    <resource path="inove/zojax.css" />
+  </zojax:resourcepackage>
+
+  <!-- custom styles -->
+  <zojax:resourcepackage
+     type="stylesheet"
+     name="zojax-custom.css"
+     title="zojax custom (Stylesheets)"
+     cache="dynamic"
+     library="zojax-custom"
+     require="zojax"
+     layer=".interfaces.ILayer">
+  </zojax:resourcepackage>
+
+  <!-- css registry -->
+  <include file="cssregistry.zcml" />
+
+</configure>

@@ -1,0 +1,53 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="zojax.cssregistry">
+
+  <!-- default properties -->
+  <browser:cssregistry title="iNove Theme css properties" layer=".interfaces.ILayer">
+    <property name="backgroundColor" value="#F8F8F8" />
+    <property name="contentBackgroundColor" value="white" />
+
+    <property name="fontFamily"
+	      value='Lucida Grande, Verdana, Tahoma, Helvetica, Sans-Serif' />
+    <property name="headingFontFamily"
+	      value='Lucida Grande, Verdana, Tahoma, Helvetica, Sans-Serif' />
+    <property name="monospaceFontFamily" 
+	      value='Monaco, Courier New, Courier, monospace' />
+
+    <property name="fontColor" value="#555" />
+    <property name="fontBaseSize" value="70%" />
+    <property name="fontSmallSize" value="90%" />
+    
+    <property name="linkColor" value="#003C75"/>
+    <property name="linkActiveColor" value="Red" />
+    <property name="linkVisitedColor" value="Purple" />
+    
+    <property name="borderWidth" value="1px" />
+    <property name="borderStyle" value="solid" />
+    <property name="borderStyleAnnotations" value="solid" />
+    
+    <property name="globalFontColor" value="#71A0CD" />
+    <property name="globalBorderColor" value="#CCCCCC" />
+    <property name="globalBackgroundColor" value="#E8E8E8" />
+    <property name="globalExtraColor" value="#6088AE" />
+    <property name="globalExtraBorderColor" value="#6088AE" />
+
+    <property name="discreetColor" value="#76797C" />
+    
+    <property name="contentViewBorderColor" value="#A5A5A5" />
+    <property name="contentViewBackgroundColor" value="#E4E4E4" />
+    <property name="contentViewFontColor" value="#898989" />
+
+    <property name="inputFontColor" value="#252525" />
+
+    <property name="textTransform" value="lowercase" />
+
+    <property name="evenRowBackgroundColor" value="#F7F7F7" />
+    <property name="oddRowBackgroundColor" value="transparent" />
+
+    <property name="notifyBorderColor" value="#ffa500" />
+    <property name="notifyBackgroundColor" value="#ffce7b" />
+  </browser:cssregistry>
+
+</configure>
