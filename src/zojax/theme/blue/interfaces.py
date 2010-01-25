@@ -20,15 +20,17 @@ from zope.i18nmessageid import MessageFactory
 from zojax.pageelement.interfaces import IPageElement
 from zojax.layoutform.interfaces import ILayoutFormLayer
 
-_ = MessageFactory('zojax.theme.inove')
+from zojax.theme.default.interfaces import ISkin
+
+_ = MessageFactory('zojax.theme.blue')
 
 
 class ILayer(interface.Interface):
-    """ inove layer """
+    """ blue layer """
 
 
-class INoveSkin(ILayer, ILayoutFormLayer):
-    """ iNove skin """
+class IBlueSkin(ILayer, ISkin, ILayoutFormLayer):
+    """ Blue skin """
 
 
 class IPageHeaders(IPageElement):

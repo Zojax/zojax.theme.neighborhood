@@ -1,0 +1,40 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="zojax.theme.blue">
+
+  <interface
+     name="zojax.theme.blue"
+     interface=".interfaces.IBlueSkin"
+     type="zope.publisher.interfaces.browser.IBrowserSkinType" />
+
+  <zojax:skin
+     title="Blue theme"
+     name="zojax.theme.blue"
+     layer=".interfaces.IBlueSkin"
+     description="Blue theme for zojax." />
+
+  <!-- resources -->
+  <zojax:resourcedirectory
+     name="blue"
+     directory="resources"
+     mapping=".css:zrt"
+     layer=".interfaces.ILayer" />
+
+  <!-- custom styles -->
+  <zojax:resourcepackage
+     type="stylesheet"
+     name="zojax-custom.css"
+     title="zojax custom (Stylesheets)"
+     cache="dynamic"
+     library="zojax-custom"
+     require="zojax"
+     layer=".interfaces.ILayer">
+     <resource path="blue/style.css" />
+  </zojax:resourcepackage>
+
+  <!-- css registry -->
+  <include file="cssregistry.zcml" />
+
+</configure>

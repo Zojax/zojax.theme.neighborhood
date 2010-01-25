@@ -4,7 +4,7 @@
    i18n_domain="zojax.cssregistry">
 
   <!-- default properties -->
-  <browser:cssregistry title="iNove Theme css properties" layer=".interfaces.ILayer">
+  <browser:cssregistry title="Blue Theme css properties" layer=".interfaces.ILayer">
     <property name="backgroundColor" value="#F8F8F8" />
     <property name="contentBackgroundColor" value="white" />
 

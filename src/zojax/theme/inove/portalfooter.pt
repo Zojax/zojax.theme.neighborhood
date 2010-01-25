@@ -1,9 +1,0 @@
-<div id="footer">
-  <a id="gotop" href="#" onclick="MGJS.goTop();return false;">Top</a>
-
-  <a id="powered" href="http://zojax.net">Powered by zojax</a>
-  <div id="copyright">
-    Copyright &copy; 2008-2009 <tal:block content="view/portal_title"/></div>
-  <div id="themeinfo">
-    Theme inspired by WordPress iNove theme by <a href="http://www.neoease.com/">mg12</a>.</div>
-</div>

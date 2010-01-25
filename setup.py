@@ -11,7 +11,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-"""Setup for zojax.theme.inove package
+"""Setup for zojax.theme.blue package
 
 $Id$
 """
@@ -24,9 +24,9 @@ def read(*rnames):
 version='0.0.1dev'
 
 
-setup(name='zojax.theme.inove',
+setup(name='zojax.theme.blue',
       version=version,
-      description="iNove skin for zojax.",
+      description="Blue skin for zojax.",
       long_description=(
           'Detailed Documentation\n' +
           '======================\n'
@@ -51,15 +51,14 @@ setup(name='zojax.theme.inove',
       package_dir = {'':'src'},
       namespace_packages=['zojax', 'zojax.theme'],
       install_requires = ['setuptools',
-                          'zojax.personal.bar',
-                          'zojax.ui.googleanalytics',
+                          'zojax.skintool',
+                          'zojax.theme.default'
                           ],
       extras_require = dict(test=['zope.app.testing',
                                   'zope.testing',
                                   'zope.testbrowser',
                                   'zope.securitypolicy',
                                   'zojax.skintool',
-                                  'zojax.filefield',
                                   ]),
       include_package_data = True,
       zip_safe = False
