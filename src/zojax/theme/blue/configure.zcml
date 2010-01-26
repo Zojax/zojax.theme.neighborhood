@@ -31,7 +31,7 @@
      library="theme"
      require="common"
      layer=".interfaces.ILayer">
-     <resource path="blue/style.css" />
+     <resource path="theme/style.css" />
   </zojax:resourcepackage>
 
   <!-- css registry -->
