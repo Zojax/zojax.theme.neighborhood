@@ -20,7 +20,7 @@ from zope.i18nmessageid import MessageFactory
 from zojax.pageelement.interfaces import IPageElement
 from zojax.layoutform.interfaces import ILayoutFormLayer
 
-from zojax.theme.default.interfaces import ISkin
+from zojax.theme.default.interfaces import ICommonSkinLayer
 
 _ = MessageFactory('zojax.theme.blue')
 
@@ -29,7 +29,7 @@ class ILayer(interface.Interface):
     """ blue layer """
 
 
-class IBlueSkin(ILayer, ISkin, ILayoutFormLayer):
+class IBlueSkin(ILayer, ICommonSkinLayer):
     """ Blue skin """
 
 
