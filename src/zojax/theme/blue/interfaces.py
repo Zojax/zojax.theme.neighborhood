@@ -29,7 +29,7 @@ class ILayer(interface.Interface):
     """ blue layer """
 
 
-class IBlueSkin(ILayer, ICommonSkinLayer):
+class IBlueSkin(ISkinLayer, ICommonSkinLayer):
     """ Blue skin """
 
 

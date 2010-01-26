@@ -20,7 +20,7 @@
      name="theme"
      directory="resources"
      mapping=".css:zrt"
-     layer=".interfaces.ILayer" />
+     layer=".interfaces.ISkinLayer" />
 
   <!-- custom styles -->
   <zojax:resourcepackage
@@ -30,7 +30,7 @@
      cache="dynamic"
      library="theme"
      require="common"
-     layer=".interfaces.ILayer">
+     layer=".interfaces.ISkinLayer">
      <resource path="theme/style.css" />
   </zojax:resourcepackage>
 
