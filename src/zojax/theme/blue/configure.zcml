@@ -17,7 +17,7 @@
 
   <!-- resources -->
   <zojax:resourcedirectory
-     name="blue"
+     name="theme"
      directory="resources"
      mapping=".css:zrt"
      layer=".interfaces.ILayer" />
@@ -25,11 +25,11 @@
   <!-- custom styles -->
   <zojax:resourcepackage
      type="stylesheet"
-     name="zojax-custom.css"
+     name="theme.css"
      title="zojax custom (Stylesheets)"
      cache="dynamic"
-     library="zojax-custom"
-     require="zojax"
+     library="theme"
+     require="common"
      layer=".interfaces.ILayer">
      <resource path="blue/style.css" />
   </zojax:resourcepackage>
