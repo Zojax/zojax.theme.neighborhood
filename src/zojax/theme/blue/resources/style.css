@@ -141,7 +141,8 @@ input {
 .z-portlet-body {
   border: 0;
 }
-.z-portlet .even {
+#space-column-one .z-portlet .even,
+#space-column-two .z-portlet .even {
   background-color: transparent;
 }
 .z-portlet-footer {
