@@ -102,8 +102,6 @@ input {
   background-color: transparent;
   border-bottom: 1px solid linkColor;
 }
-
-#z-portal-tabs ul li:first-child,
 #z-portal-tabs ul li.selected { /* we should apply this to selected item only */
   font-weight: bold;
   background-color: #edf2f6;
@@ -151,11 +149,9 @@ input {
 }
 
 
-
 /*
 ** CONTENT STYLES
 */
-
 
 #z-space,
 .z-controlpanel-wrapper {
