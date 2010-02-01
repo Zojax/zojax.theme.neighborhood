@@ -15,7 +15,21 @@
      layer=".interfaces.IBlueSkin"
      description="Blue theme for zojax." />
 
+  <!-- default logo -->
+  <zojax:ttwresource
+     title="Header: Logo - Data"
+     name="logo"
+     file="resources/images/logo.png"
+     layer=".interfaces.ISkinLayer"
+     />
+
   <!-- resources -->
+
+  <zojax:resourcedirectory
+     name="images"
+     directory="resources/images"
+     layer=".interfaces.ISkinLayer" />
+
   <zojax:resourcedirectory
      name="theme"
      directory="resources"
@@ -31,6 +45,8 @@
      library="theme"
      require="common"
      layer=".interfaces.ISkinLayer">
+     <resource path="theme/reset.css" />
+     <resource path="theme/base.css" />
      <resource path="theme/style.css" />
   </zojax:resourcepackage>
 

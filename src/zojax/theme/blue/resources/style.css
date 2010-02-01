@@ -1,6 +1,203 @@
-/* zrt-replace: "img" "blue/img" */
 /* zrt-cssregistry: */
 
+/*
+** BASIC STYLES
+*/
+
+body {
+  background: #BED9EB url(images/global-bg.gif) repeat-x left top;
+}
+input {
+  font-size: 1.1em;
+  padding: 4px;
+}
 
 
-/* footer END */
+/*
+** STRUCTURE STYLES
+*/
+
+#z-portal {
+  width: 960px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+
+/*
+** HEADER STYLES
+*/
+
+#z-portal-header {
+  position: relative;
+  padding-bottom: 88px;
+  background: url(images/header-blue-rounded.png) no-repeat left bottom;
+}
+
+/* personalbar */
+
+.z-personalbar {
+  float: right;
+  padding: 3px 10px;
+  color: #333;
+  font-size: 1.2em;
+  background-color: #edf2f6;
+  border: 0;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+.z-personalbar-menu li {
+  margin-right: 7px;
+  padding: 0 7px 0 0;
+  color: #333;
+  background: url(images/bullet.png) no-repeat right 50%;
+}
+.z-personalbar-menu li a {
+  color: #1A74B0;
+}
+.z-personalbar-menu li a:hover {
+  text-decoration: underline;
+}
+.z-personalbar-menu .z-personalbar-principal {
+  background-image: none;
+}
+.z-personalbar-menu li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  background-image: none;
+}
+
+/* logo */
+
+#z-portal-logo {
+  padding: 30px 0 15px 15px;
+}
+
+/* portal tabs */
+
+#z-portal-tabs {
+  padding: 0;
+  position: absolute;
+  top: 35px;
+  right: 0px;
+}
+#z-portal-tabs ul {
+  margin: 0;
+}
+#z-portal-tabs ul li {
+  display: block;
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 5px 10px;
+  font-size: 1.45em;
+}
+#z-portal-tabs ul li a {
+  padding: 0;
+  line-height: 1em;
+  text-transform: capitalize;
+  border: 0;
+}
+#z-portal-tabs ul li a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid linkColor;
+}
+
+#z-portal-tabs ul li:first-child,
+#z-portal-tabs ul li.selected { /* we should apply this to selected item only */
+  font-weight: bold;
+  background-color: #edf2f6;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* breadcrumbs */
+
+.z-breadcrumbs {
+  display: none;
+}
+
+
+/*
+** PORTLETS STYLES
+*/
+
+.z-portlet {
+  padding: 15px;
+  background-color: #edf2f6;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.z-portlet h2, .z-portlet-header {
+  margin: 0 0 5px 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.27em;
+  color: #333;
+  background-color: transparent;
+  border: 0;
+}
+.z-portlet-body {
+  border: 0;
+}
+.z-portlet .even {
+  background-color: transparent;
+}
+.z-portlet-footer {
+  background-color: transparent;
+}
+
+
+
+/*
+** CONTENT STYLES
+*/
+
+
+#z-space,
+.z-controlpanel-wrapper {
+  margin: 0;
+  padding: 0;
+  padding: 22px 30px 15px 30px;
+  background-color: #fff;
+  border-left: 2px solid globalBorderColor;
+  border-right: 2px solid globalBorderColor;
+}
+#space-columns {
+  margin: 0;
+  padding: 0;
+}
+#z-portal-workspace {
+  overflow: hidden;
+  padding: 20px 30px;
+  border-left: 2px solid globalBorderColor;
+  border-right: 2px solid globalBorderColor;
+}
+#z-space #z-portal-workspace,
+#z-controlpanel #z-portal-workspace {
+  padding: 0;
+  border: 0;
+  border: 0;
+}
+#z-controlpanel {
+  margin: 0;
+}
+ul.z-wizard-wizardsteps {
+  margin-bottom: -4.5em;
+}
+
+
+/*
+** FOOTER STYLES
+*/
+
+#z-portal-footer {
+  padding: 15px;
+  font-size: 1.1em;
+  color: #666;
+  background: url(images/content-bottom-rounded.gif) no-repeat left top;
+}
+

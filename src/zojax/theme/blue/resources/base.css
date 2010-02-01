@@ -1,0 +1,166 @@
+/* zrt-cssregistry: */
+
+body {
+  color: fontColor;
+  font: fontBaseSize fontFamily;
+  background-color: contentBackgroundColor;
+}
+table {
+  font-size: 100%;
+}
+cite {
+  font-style: italic;
+}
+a {
+  color: linkColor;
+  background-color: transparent;
+}
+img {
+  vertical-align: middle;
+}
+p {
+  margin: 0 0 0.75em 0;
+  line-height: 1.5em;
+}
+p img {
+  margin: 0;
+}
+hr {
+  margin: 0.5em 0 1em 0;
+  height: borderWidth;
+  color: globalBorderColor;
+  background-color: globalBorderColor;
+  border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.25em 0;
+  color: fontColor;
+  font-family: headingFontFamily;
+  border-bottom: borderWidth borderStyle globalBorderColor;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 150%;
+}
+h2 {
+  font-size: 140%;
+}
+h3 {
+  font-weight: bold;
+  font-size: 125%;
+}
+h4 {
+  font-weight: bold;
+  font-size: 110%;
+  border-bottom: none;
+}
+h5 {
+  font-weight: bold;
+  font-size: 100%;
+  border-bottom: none;
+}
+h6 {
+    font-weight: bold;
+    font-size: fontSmallSize;
+    border-bottom: none;
+}
+ul {
+  margin: 0.5em 0 0 1.5em;
+  line-height: 1.5em;
+}
+ol {
+  margin: 0.5em 0 0 1.8em;
+  line-height: 1.5em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+    margin-bottom: 1em;
+}
+fieldset {
+  margin: 1em 0 1em 0;
+  padding: 0 1em 0 1em;
+  font-size: 110%;
+  background-color: #fff;
+  border: borderWidth borderStyle globalBorderColor;
+}
+legend {
+  padding: 0.3em;
+  font-size: 90%;
+  background: globalBackgroundColor;
+}
+form {
+  border: 0;
+}
+label {
+  font-weight: bold;
+}
+textarea {
+  width: 80%;
+  font-family: monospaceFontFamily;
+  color: inputFontColor;
+  border: borderWidth solid globalBorderColor;
+}
+input {
+  font-family: fontFamily;
+  color: inputFontColor;
+  vertical-align: middle;
+  border: borderWidth solid globalBorderColor;
+}
+select {
+  color: inputFontColor;
+  background-color: white;
+  vertical-align: top;
+  border: borderWidth solid globalBorderColor;
+}
+abbr, acronym {
+  color: fontColor;
+  background-color: transparent;
+  cursor: help;
+  border: 0;
+  border-bottom: borderWidth dotted fontColor;
+}
+q {
+  font-family: Baskerville, Georgia, serif;
+  font-style: italic;
+  font-size: 120%;
+}
+blockquote {
+  padding-left: 0.5em;
+  margin-left: 0;
+  color: discreetColor;
+  border-left: 4px solid globalBorderColor;
+}
+code {
+  font-size: 120%;
+  font-family: monospaceFontFamily;
+  color: fontColor;
+  background-color: globalBackgroundColor;
+  padding: 0 0.1em;
+}
+pre {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  font-size: 100%;
+  font-family: monospaceFontFamily;
+  color: fontColor;
+  overflow: auto;
+  background-color: globalBackgroundColor;
+  border: borderWidth borderStyle globalBorderColor;
+}
+ins {
+  color: green;
+  text-decoration: none;
+}
+del {
+  color: red;
+  text-decoration: line-through;
+}

@@ -8,33 +8,30 @@
     <property name="backgroundColor" value="#F8F8F8" />
     <property name="contentBackgroundColor" value="white" />
 
-    <property name="fontFamily"
-	      value='Lucida Grande, Verdana, Tahoma, Helvetica, Sans-Serif' />
-    <property name="headingFontFamily"
-	      value='Lucida Grande, Verdana, Tahoma, Helvetica, Sans-Serif' />
-    <property name="monospaceFontFamily" 
-	      value='Monaco, Courier New, Courier, monospace' />
+    <property name="fontFamily" value='Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif' />
+    <property name="headingFontFamily" value='Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif' />
+    <property name="monospaceFontFamily" value='Monaco, Courier New, Courier, monospace' />
 
-    <property name="fontColor" value="#555" />
-    <property name="fontBaseSize" value="70%" />
+    <property name="fontColor" value="#444" />
+    <property name="fontBaseSize" value="69%" />
     <property name="fontSmallSize" value="90%" />
-    
-    <property name="linkColor" value="#003C75"/>
+
+    <property name="linkColor" value="#1a74b0"/>
     <property name="linkActiveColor" value="Red" />
     <property name="linkVisitedColor" value="Purple" />
-    
+
     <property name="borderWidth" value="1px" />
     <property name="borderStyle" value="solid" />
     <property name="borderStyleAnnotations" value="solid" />
-    
-    <property name="globalFontColor" value="#71A0CD" />
-    <property name="globalBorderColor" value="#CCCCCC" />
-    <property name="globalBackgroundColor" value="#E8E8E8" />
-    <property name="globalExtraColor" value="#6088AE" />
-    <property name="globalExtraBorderColor" value="#6088AE" />
+
+    <property name="globalFontColor" value="#666" />
+    <property name="globalBorderColor" value="#b1c3d4" />
+    <property name="globalBackgroundColor" value="#f0f0f0" />
+<!--    <property name="globalExtraColor" value="#6088AE" />
+    <property name="globalExtraBorderColor" value="#6088AE" />-->
 
     <property name="discreetColor" value="#76797C" />
-    
+
     <property name="contentViewBorderColor" value="#A5A5A5" />
     <property name="contentViewBackgroundColor" value="#E4E4E4" />
     <property name="contentViewFontColor" value="#898989" />
