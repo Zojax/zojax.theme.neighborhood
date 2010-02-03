@@ -28,6 +28,8 @@ from interfaces import IPortletable
 
 
 class PortalHeader(object):
+    
+    headerContext = None
 
     def update(self):
         context = self.context
