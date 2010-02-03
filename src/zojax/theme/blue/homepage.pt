@@ -16,6 +16,12 @@
       </ul>
     </div>
   </div>-->
+  
+  <div class="top-column"
+          tal:define="column provider:columns.top"
+          tal:condition="python:column"
+          tal:content="structure column" />
+          
   <div class="visualClear"></div>
 
   <h1>test</h1>
