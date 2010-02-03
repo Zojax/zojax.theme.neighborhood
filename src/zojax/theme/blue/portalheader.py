@@ -39,3 +39,5 @@ class PortalHeader(object):
             context = context.__parent__
         self.headerContext = context
         self.hasAdvTop = queryMultiAdapter((context, request, self), IContentProvider, name='columns.advtop')
+        if self.hasAdvTop is not None:
+            self.hasAdvTop = elf.hasAdvTop.updateAndRender()
