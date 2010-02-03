@@ -62,7 +62,7 @@
      view="zojax.content.space.interfaces.IOverviewWorkspace"
      class="zojax.content.space.browser.layout.SpaceLayout"
      layer=".interfaces.ISkinLayer" />
-     
+
   <zojax:portletManager
      name="columns.top"
      title="Top column portlets"

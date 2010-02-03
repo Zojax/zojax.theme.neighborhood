@@ -2,9 +2,8 @@
   <tal:block tal:content="structure pageelement:portal.personalbar" />
   <tal:block tal:content="structure pageelement:portal.logo" />
   <tal:block tal:content="structure pageelement:portal.tabs" />
-  <div class="z-portal-divider"></div>
-  <tal:block tal:content="structure pageelement:portal.breadcrumbs" />
-  <div class="adv-top"
-       tal:condition="view/hasAdvTop"
-       tal:content="structure provider:columns.advtop" />
+  <tal:block condition="view/hasAdvTop" content="structure provider:columns.advtop" />
+  <tal:block condition="not:view/hasAdvTop">
+    <img src="images/header-blue-rounded.png" alt="" />
+  </tal:block>
 </div>
