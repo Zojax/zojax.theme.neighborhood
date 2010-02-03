@@ -84,6 +84,7 @@
      name="portal.header"
      provides="zojax.theme.default.interfaces.IPortalHeader"
      template="portalheader.pt" 
+     class=".portalheader.PortalHeader"
      layer=".interfaces.ISkinLayer" />
      
   <class class="zojax.content.space.content.ContentSpace">
