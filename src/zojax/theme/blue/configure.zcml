@@ -53,4 +53,14 @@
   <!-- css registry -->
   <include file="cssregistry.zcml" />
 
+  <!-- homepage -->
+  <zojax:layout
+     name="space"
+     layout="portal"
+     for="zojax.portal.interfaces.IPortal"
+     template="homepage.pt"
+     view="zojax.content.space.interfaces.IOverviewWorkspace"
+     class="zojax.content.space.browser.layout.SpaceLayout"
+     layer=".interfaces.ISkinLayer" />
+
 </configure>
