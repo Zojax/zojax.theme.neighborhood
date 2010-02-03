@@ -70,5 +70,20 @@
      class="zojax.portlet.manager.PortletManagerWithStatus"
      schema="zojax.portlet.interfaces.IPortletManagerWithStatus"
      layer=".interfaces.ISkinLayer" />
+  
+  <zojax:portletManager
+     name="columns.advtop"
+     title="Adv top column portlets"
+     for="zojax.content.space.interfaces.ISpace"
+     class="zojax.portlet.manager.PortletManagerWithStatus"
+     schema="zojax.portlet.interfaces.IPortletManagerWithStatus"
+     layer=".interfaces.ISkinLayer" />
+     
+  <!-- portal elements -->
+  <zojax:pageelement
+     name="portal.header"
+     provides="zojax.theme.default.interfaces.IPortalHeader"
+     template="portalheader.pt" 
+     layer=".interfaces.ISkinLayer" />
 
 </configure>
