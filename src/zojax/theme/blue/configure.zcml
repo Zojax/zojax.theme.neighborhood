@@ -74,7 +74,7 @@
   <zojax:portletManager
      name="columns.advtop"
      title="Adv top column portlets"
-     for="zojax.content.space.interfaces.ISpace"
+     for=".interfaces.IPortletable"
      class="zojax.portlet.manager.PortletManagerWithStatus"
      schema="zojax.portlet.interfaces.IPortletManagerWithStatus"
      layer=".interfaces.ISkinLayer" />
@@ -85,5 +85,9 @@
      provides="zojax.theme.default.interfaces.IPortalHeader"
      template="portalheader.pt" 
      layer=".interfaces.ISkinLayer" />
+     
+  <class class="zojax.content.space.content.ContentSpace">
+    <implements interface=".interfaces.IPortletable" />
+  </class>
 
 </configure>

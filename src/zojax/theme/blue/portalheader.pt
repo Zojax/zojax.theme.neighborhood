@@ -5,8 +5,6 @@
   <div class="z-portal-divider"></div>
   <tal:block tal:content="structure pageelement:portal.breadcrumbs" />
   <div class="adv-top"
-          tal:define="column provider:columns.advtop"
-          tal:on-error=""
-          tal:condition="python:column"
-          tal:content="structure column" />
+       tal:condition="view/hasAdvTop"
+       tal:content="structure provider:columns.advtop" />
 </div>

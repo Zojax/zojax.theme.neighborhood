@@ -25,6 +25,9 @@ from zojax.theme.default.interfaces import ICommonSkinLayer
 _ = MessageFactory('zojax.theme.blue')
 
 
+class IPortletable(interface.Interface):
+    pass
+
 class ISkinLayer(interface.Interface):
     """ blue layer """
 
