@@ -1,14 +1,9 @@
 <div id="z-space" i18n:domain="zojax.content.space">
 
-  <div class="top-column"
+  <div id="homepage-vertical-blocks"
           tal:define="column provider:columns.top"
           tal:condition="python:column"
           tal:content="structure column" />
-
-<!--
-  <div class="z-space-header" tal:condition="layout/showHeader">
-    <h1 tal:content="layout/title"></h1>
-  </div>-->
 
   <tal:block content="structure view/render" />
 

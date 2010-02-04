@@ -2,10 +2,12 @@
   <tal:block tal:content="structure pageelement:portal.personalbar" />
   <tal:block tal:content="structure pageelement:portal.logo" />
   <tal:block tal:content="structure pageelement:portal.tabs" />
-  <tal:block condition="view/hasAdvTop" 
-             define="context view/headerContext"
-             content="structure provider:columns.advtop" />
-  <tal:block condition="not:view/hasAdvTop">
-    <img tal:attributes="src context/++resource++images/header-blue-rounded.png" alt="" />
-  </tal:block>
+  <div id="header-image">
+    <tal:block condition="view/hasAdvTop"
+               define="context view/headerContext"
+               content="structure provider:columns.advtop" />
+    <tal:block condition="not:view/hasAdvTop">
+      <img tal:attributes="src context/++resource++images/header-blue-rounded.png" alt="" />
+    </tal:block>
+  </div>
 </div>

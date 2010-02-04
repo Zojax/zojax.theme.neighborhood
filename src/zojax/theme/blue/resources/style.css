@@ -124,7 +124,8 @@ input {
 #z-portal-header .portlet-htmlsource .z-portlet-item {
   padding: 0;
 }
-  
+
+
 /*
 ** PORTLETS STYLES
 */
@@ -194,6 +195,47 @@ ul.z-wizard-wizardsteps {
   margin-bottom: -4.5em;
 }
 
+
+/* HOMEPAGE STYLES */
+
+.section-zojax-portal #z-space {
+  padding: 15px 10px;
+}
+#homepage-vertical-blocks {
+  overflow: hidden;
+}
+#homepage-vertical-blocks .z-portlet {
+  width: 270px;
+  padding: 10px;
+  float: right;
+  min-height: 130px;
+  background-color: transparent;
+  border: 0;
+}
+#homepage-vertical-blocks .z-portlet .z-portlet-header {
+  color: linkColor;
+}
+#homepage-vertical-blocks .z-portlet .z-portlet-body {
+  color: #6a6a6a;
+  font-size: 1.1em;
+}
+#homepage-vertical-blocks .z-portlet .z-portlet-item {
+  padding: 0;
+}
+#homepage-vertical-blocks .z-portlet .z-portlet-item img {
+  float: right;
+  margin: 0 0 0 1em;
+}
+#homepage-vertical-blocks .portlet-container-wrapper .z-portlet {
+  float: left;
+}
+#homepage-vertical-blocks .portlet-container-wrapper .portlet-container-wrapper .z-portlet {
+  width: auto;
+  float: none;
+  margin: 0 290px;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+}
 
 /*
 ** FOOTER STYLES
