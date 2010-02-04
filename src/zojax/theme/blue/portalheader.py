@@ -23,6 +23,8 @@ from zojax.extensions.interfaces import IExtensible
 from zojax.cache.view import cache
 from zojax.cache.keys import ContextModified
 from zojax.cache.timekey import TimeKey, each15minutes
+from zojax.portlet.manager import PortletManager
+
 
 from interfaces import IPortletable
 
@@ -40,4 +42,4 @@ class PortalHeader(object):
         self.headerContext = context
         self.hasAdvTop = queryMultiAdapter((context, request, self), IContentProvider, name='columns.advtop')
         if self.hasAdvTop is not None:
-            self.hasAdvTop = elf.hasAdvTop.updateAndRender()
+            self.hasAdvTop = self.hasAdvTop.updateAndRender()
