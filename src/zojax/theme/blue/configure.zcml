@@ -23,6 +23,14 @@
      layer=".interfaces.ISkinLayer"
      />
 
+  <!-- default favicon -->
+  <zojax:ttwresource
+     title="Header: Favicon - Data"
+     name="favicon.ico"
+     type="image/x-icon"
+     file="resources/images/favicon.ico"
+     layer=".interfaces.ISkinLayer"
+
   <!-- resources -->
 
   <zojax:resourcedirectory
