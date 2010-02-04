@@ -30,6 +30,7 @@
      type="image/x-icon"
      file="resources/images/favicon.ico"
      layer=".interfaces.ISkinLayer"
+     />
 
   <!-- resources -->
 
