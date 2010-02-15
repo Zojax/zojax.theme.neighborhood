@@ -11,7 +11,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-"""Setup for zojax.theme.blue package
+"""Setup for zojax.theme.neighborhood package
 
 $Id$
 """
@@ -24,9 +24,9 @@ def read(*rnames):
 version='0.0.1dev'
 
 
-setup(name='zojax.theme.blue',
+setup(name='zojax.theme.neighborhood',
       version=version,
-      description="Blue skin for zojax.",
+      description="Neighborhood skin for zojax.",
       long_description=(
           'Detailed Documentation\n' +
           '======================\n'

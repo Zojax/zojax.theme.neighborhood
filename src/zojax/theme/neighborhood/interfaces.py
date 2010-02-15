@@ -22,18 +22,18 @@ from zojax.layoutform.interfaces import ILayoutFormLayer
 
 from zojax.theme.default.interfaces import ICommonSkinLayer
 
-_ = MessageFactory('zojax.theme.blue')
+_ = MessageFactory('zojax.theme.neighborhood')
 
 
 class IPortletable(interface.Interface):
     pass
 
 class ISkinLayer(interface.Interface):
-    """ blue layer """
+    """ neighborhood layer """
 
 
-class IBlueSkin(ISkinLayer, ICommonSkinLayer):
-    """ Blue skin """
+class INeighborhoodSkin(ISkinLayer, ICommonSkinLayer):
+    """ Neighborhood skin """
 
 
 class IPageHeaders(IPageElement):
