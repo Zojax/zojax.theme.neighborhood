@@ -15,5 +15,13 @@
      permission="zope.Public"
      layout="modal"
      layer="..interfaces.ISkinLayer" />
+     
+  <zojax:pagelet
+     type="login.action"
+     for="zojax.authentication.interfaces.IDefaultCredentialsPlugin"
+     template="defaultlogin.pt"
+     class=".defaultlogin.LoginAction"
+     permission="zope.Public"
+     layer="..interfaces.ISkinLayer" />
 
 </configure>
