@@ -14,7 +14,16 @@
      name="zojax.theme.neighborhood"
      layer=".interfaces.INeighborhoodSkin"
      description="Neighborhood theme for zojax." />
-
+     
+  <!-- auth layout -->
+  <zojax:layout
+     name="modal"
+     layout="page"
+     hidden="true"
+     template="modallayout.pt"
+     for="zope.app.component.site.SiteManagerContainer"
+     layer=".interfaces.ISkinLayer" />
+     
   <!-- default logo -->
   <zojax:ttwresource
      title="Header: Logo - Data"
@@ -58,6 +67,14 @@
      <resource path="theme/base.css" />
      <resource path="theme/style.css" />
   </zojax:resourcepackage>
+  
+  <zojax:resourceinclude
+     type="javascript"
+     name="modallogin.js"
+     library="theme"
+     file="resources/javascripts/modallogin.js"
+     require="jquery-plugins"
+     layer=".interfaces.ISkinLayer" />
 
   <!-- css registry -->
   <include file="cssregistry.zcml" />
@@ -99,5 +116,7 @@
   <class class="zojax.content.space.content.ContentSpace">
     <implements interface=".interfaces.IPortletable" />
   </class>
+
+  <include package=".auth" />
 
 </configure>
