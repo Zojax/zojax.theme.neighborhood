@@ -194,7 +194,9 @@ input {
 ul.z-wizard-wizardsteps {
   margin-bottom: -4.5em;
 }
-
+.z-neighborhood-views-wrapper {
+  margin-bottom: 1.5em;
+}
 
 /* HOMEPAGE STYLES */
 
