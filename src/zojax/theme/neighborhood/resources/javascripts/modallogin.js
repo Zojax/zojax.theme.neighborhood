@@ -25,6 +25,7 @@ $(document).ready(function(){
       form.bind('dialogclose', function(event, ui) {
           if ($(this).attr('result'))
               window.location.href = $(this).attr('result')
+          window.clearInterval(interval)
   });
   })
 });
