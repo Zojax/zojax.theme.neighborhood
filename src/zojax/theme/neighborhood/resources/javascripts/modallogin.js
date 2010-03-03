@@ -23,7 +23,7 @@ $(document).ready(function(){
           }
       }, 500)
       form.bind('dialogclose', function(event, ui) {
-          if ($(this).attr('result')) {
+          if ($(this).attr('result') && $(this).attr('result') != 'null') {
               window.location.href = $(this).attr('result')
           }
           window.clearInterval(interval)
