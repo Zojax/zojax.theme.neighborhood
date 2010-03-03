@@ -200,6 +200,10 @@ ul.z-wizard-wizardsteps {
 .z-neighborhood-views-wrapper {
   margin-bottom: 1.5em;
 }
+.listing-item .details-ct {
+  width: 100%;
+}
+
 
 /* HOMEPAGE STYLES */
 
