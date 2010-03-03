@@ -16,15 +16,16 @@ $(document).ready(function(){
       var interval = window.setInterval(function() {
           var win = window.frames[uid+"-VIEW"];
           var loc = win.location.href;
-          if (!loc.match(/login.html/) && !loc.match(/about:blank/) && $(win).find("div").length) {
+          if (!loc.match(/login.html/) && !loc.match(/about:blank/) && $("div", win.document).length) {
               $.FrameDialog.setResult(loc, uid);
               $.FrameDialog.closeDialog(uid);
               window.clearInterval(interval)
           }
-      }, 1000)
+      }, 500)
       form.bind('dialogclose', function(event, ui) {
-          if ($(this).attr('result'))
+          if ($(this).attr('result')) {
               window.location.href = $(this).attr('result')
+          }
           window.clearInterval(interval)
   });
   })
