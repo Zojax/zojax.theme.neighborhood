@@ -157,6 +157,9 @@ input {
 .z-portlet-footer {
   background-color: transparent;
 }
+.z-portlet, .z-portlet .z-portlet-header, .portlet-calendar .z-portlet-header {
+  background-repeat: no-repeat;
+}
 
 
 /*
@@ -238,6 +241,7 @@ ul.z-wizard-wizardsteps {
   border-left: 1px dotted #ccc;
   border-right: 1px dotted #ccc;
 }
+
 
 /*
 ** FOOTER STYLES
