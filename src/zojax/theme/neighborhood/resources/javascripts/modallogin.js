@@ -7,8 +7,8 @@ $(document).ready(function(){
           url: portal + 'modallogin.html',
           buttons:{},
           closeOnEscape: true,
-          minWidth:800,
-          minHeight:600,
+          minWidth:900,
+          minHeight:700,
           title: $(this).text(),
       });
       form.find('iframe').attr('scrolling', 'no');
@@ -21,7 +21,7 @@ $(document).ready(function(){
               $.FrameDialog.closeDialog(uid);
               window.clearInterval(interval)
           }
-      }, 500)
+      }, 250)
       form.bind('dialogclose', function(event, ui) {
           if ($(this).attr('result') && $(this).attr('result') != 'null') {
               window.location.href = $(this).attr('result')

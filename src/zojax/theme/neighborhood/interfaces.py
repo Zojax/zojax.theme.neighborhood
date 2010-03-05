@@ -34,7 +34,3 @@ class ISkinLayer(interface.Interface):
 
 class INeighborhoodSkin(ISkinLayer, ICommonSkinLayer):
     """ Neighborhood skin """
-
-
-class IPageHeaders(IPageElement):
-    """ page headers """
