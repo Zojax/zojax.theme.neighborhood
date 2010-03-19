@@ -15,7 +15,12 @@ $(document).ready(function(){
       var uid = form.attr('id');
       var interval = window.setInterval(function() {
           var win = window.frames[uid+"-VIEW"];
-          var loc = win.location.href;
+          try {
+              var loc = win.location.href;
+          }
+          catch (e) {
+              return
+          }
           if (!loc.match(/login.html/) && !loc.match(/about:blank/) && $("div", win.document).length) {
               $.FrameDialog.setResult(loc, uid);
               $.FrameDialog.closeDialog(uid);
