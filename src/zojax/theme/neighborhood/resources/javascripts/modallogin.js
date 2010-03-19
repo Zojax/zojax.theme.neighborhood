@@ -9,7 +9,7 @@ $(document).ready(function(){
           closeOnEscape: true,
           minWidth:900,
           minHeight:700,
-          title: $(this).text(),
+          title: $(this).text()
       });
       form.find('iframe').attr('scrolling', 'no');
       var uid = form.attr('id');
