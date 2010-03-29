@@ -197,11 +197,37 @@ input {
 ul.z-wizard-wizardsteps {
   margin-bottom: -4.5em;
 }
+.listing-item .details-ct {
+  width: 100%;
+}
+
+/* neighborhood views */
+
 .z-neighborhood-views-wrapper {
   margin-bottom: 1.5em;
 }
-.listing-item .details-ct {
-  width: 100%;
+.z-neighborhood-views ul {
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+.z-neighborhood-views ul li {
+  display: block;
+  float: left;
+  padding: 2px 5px;
+  margin: 0 5px 0 0;
+  background-color: #efefef;
+  border: 1px solid #666;
+  border-bottom: 0;
+  -moz-border-radius: 5px 5px 0 0;
+}
+.z-neighborhood-views ul li:hover {
+  background-color: #ddd;
+}
+.z-neighborhood-views ul li.selected {
+  background-color: #ccc;
+}
+.z-neighborhood-views ul li.selected a {
+  color: #333;
 }
 
 
