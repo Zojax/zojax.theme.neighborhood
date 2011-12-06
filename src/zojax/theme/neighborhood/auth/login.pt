@@ -1,4 +1,4 @@
-<div i18n:domain="zojax.authentication" class="portal-login-form">
+<div i18n:domain="zojax.theme.neighborhood" class="portal-login-form">
 
   <h1 tal:condition="view/isAnonymous" i18n:translate="">Please log in</h1>
   <p i18n:translate="">
@@ -16,7 +16,7 @@
   
   <p tal:condition="view/join">
     <tal:block i18n:translate="">New user? If you do not have an account here, </tal:block>
-    <a tal:attributes="href string:${view/portalURL}/join.html">
+    <a tal:attributes="href string:${view/portalURL}/join.html" i18n:translate="">
       head over to the registration form.</a>
   </p>
   

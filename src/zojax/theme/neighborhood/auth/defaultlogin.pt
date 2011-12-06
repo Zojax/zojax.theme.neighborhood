@@ -1,6 +1,6 @@
 <form action="" method="post" tal:attributes="action view/loginURL">
 
-  <fieldset i18n:domain="zojax.authentication">
+  <fieldset i18n:domain="zojax.theme.neighborhood">
     <legend i18n:translate="">Account details</legend>
 
     <div class="z-form-field">

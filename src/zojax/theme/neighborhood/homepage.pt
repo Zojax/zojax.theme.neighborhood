@@ -1,4 +1,4 @@
-<div id="z-space" i18n:domain="zojax.content.space">
+<div id="z-space" i18n:domain="zojax.theme.neighborhood">
 
   <div id="homepage-vertical-blocks"
           tal:define="column provider:columns.top"
