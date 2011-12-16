@@ -1,0 +1,81 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Thu Dec  8 22:17:02 2011\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/theme/neighborhood/auth/defaultlogin.pt:18
+msgid "Password"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/defaultlogin.pt:20
+msgid "Case sensitive, make sure caps lock is not enabled."
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/defaultlogin.pt:28
+msgid "Log in"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/defaultlogin.pt:4
+msgid "Account details"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/defaultlogin.pt:7
+msgid "Login Name"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/defaultlogin.pt:9
+msgid "Login names are case sensitive, make sure the caps lock key is not enabled."
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:10
+msgid "If you have forgotten your password,"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:11
+msgid "click here to retrieve it"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:18
+msgid "New user? If you do not have an account here,"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:19
+msgid "head over to the registration form."
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:24
+msgid "You are not authorized to perform this action."
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:25
+msgid "However, you may login as a different user who is authorized."
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:3
+msgid "Please log in"
+msgstr ""
+
+#: src/zojax/theme/neighborhood/auth/login.pt:4
+msgid "To access this part of the site, you need to log in with your user name and password."
+msgstr ""
+
